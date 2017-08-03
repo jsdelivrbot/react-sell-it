@@ -15,6 +15,7 @@ class Sidebar extends Component {
 				<BrowserRouter>
 					<div>
 						<SignUpButtons/>
+
 						<Switch>
 							<Route path="/sign-up" component={SignUpForm} />
 							<Route path="/" component={LoginForm} />

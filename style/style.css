@@ -69,6 +69,10 @@
 	margin-bottom: 30px;
 }
 
+.sign-buttons a {
+	text-decoration: none;
+}
+
 
 
 /* MEDIA QUERIES */
