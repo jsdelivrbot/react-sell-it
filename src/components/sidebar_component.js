@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import LoginForm from './login_form_component';
-import SignUpForm from './sign_up_form_component';
-import SignUpButtons from "./signup_buttons_component";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import LoginForm from '../containers/login_form_conatiner';
+import SignUpForm from '../containers/sign_up_form_container';
+import SignUpButtons from '../containers/signup_buttons_container';
+import Dashboard from '../containers/dashboard_container'
 
 class Sidebar extends Component {
 	render() {
@@ -17,6 +19,7 @@ class Sidebar extends Component {
 						<SignUpButtons/>
 
 						<Switch>
+							<Route path="/dashboard" component={Dashboard} />
 							<Route path="/sign-up" component={SignUpForm} />
 							<Route path="/" component={LoginForm} />
 						</Switch>
