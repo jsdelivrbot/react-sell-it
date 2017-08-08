@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {registerUser} from '../actions'
-import TextInput from '../components/common/text_input_component';
+import {registerUser} from '../../actions/index'
+import TextInput from '../../components/common/text_input_component';
 
 class SignUpForm extends Component {
 	constructor(props) {
@@ -24,7 +24,9 @@ class SignUpForm extends Component {
 
 	onFormSubmit(event) {
 		event.preventDefault();
-		this.props.registerUser(this.state.credentials);
+		this.props.registerUser(this.state.credentials, () => {
+			this.props.history.push('/');
+		});
 	}
 
 	render() {

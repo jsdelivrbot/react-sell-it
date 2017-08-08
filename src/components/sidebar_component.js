@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import LoginForm from '../containers/login_form_conatiner';
-import SignUpForm from '../containers/sign_up_form_container';
-import SignUpButtons from '../containers/signup_buttons_container';
+import LoginForm from '../containers/auth/sign_in';
+import SignUpForm from '../containers/auth/sign_up';
+import SignUpButtons from '../containers/common/signup_buttons_container';
 import Dashboard from '../containers/dashboard_container'
 
 class Sidebar extends Component {

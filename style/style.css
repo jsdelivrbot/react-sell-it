@@ -73,6 +73,10 @@
 	text-decoration: none;
 }
 
+.dashboard-wrapper .sign-buttons {
+	display: none;
+}
+
 
 
 /* MEDIA QUERIES */
