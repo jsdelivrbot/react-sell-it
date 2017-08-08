@@ -10,20 +10,16 @@ class Dashboard extends Component {
 	}
 
 	renderContent() {
-		console.log('this.props.content', this.props.content);
-		if(this.props.content) {
-			return (
-				<p>
-					<strong>You are successfully logged in!</strong>
-				</p>
-			);
-		}
+		return (
+			<p>
+				<strong>You are successfully logged in!</strong>
+			</p>
+		);
 	}
 
 	render() {
 		return (
 			<div className="dashboard-wrapper">
-				yoooooooooooo
 				{this.renderContent()}
 			</div>
 		);
